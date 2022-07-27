@@ -1,0 +1,50 @@
+.typewriter {
+    display: block;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38vw;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(60, end),
+      blink-caret 0.75s step-end infinite;
+
+  }
+
+  .sarka {
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 150px;
+    transition: 0.3s;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #253D5B; }
+  }
+
+  .sarka:hover {
+    opacity: 0.7;
+  }
+
+  // body {
+  //   background-image: url(/images/grey-medium.jpg);
+  //   background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+  //   min-height: 100vh;
+  // }
